@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="Home" on="08/20/21||18:59:44" using="Simscape Multibody Link Version 5.1" from="Pro/Engineer Creo 3.0 - 2014350"/>
+<ModelUnits mass="kg" length="mm"/>
+<RootAssembly name="ARM_2_LINK" uid="ARM_2_LINK_asm" version="158">
+<AssemblyFile name="ARM_2_LINK.asm" type="ProEngineer Assembly"/>
+<InstanceTree>
+<Instance name="SM_SROBOT_BASE" grounded="true" uid="40" entityUid="SM_SROBOT_BASE_prt">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="SM_SROBOT_UPPERARM" uid="42" entityUid="SM_SROBOT_UPPERARM_prt">
+<Transform>
+<Rotation>1 0 0 0 1 3.6082248300317588e-015 0 -3.6082248300317588e-015 1</Rotation>
+<Translation>-12.699999999999999 131.40000000000001 1.2647164131934776e-015</Translation>
+</Transform>
+</Instance>
+<Instance name="SM_SROBOT_FOREARM" uid="46" entityUid="SM_SROBOT_FOREARM_prt">
+<Transform>
+<Rotation>0.99999826577113349 0 -0.0018623787814228345 0 1 3.3861740638881116e-015 0.0018623787814228345 -3.3861806101828911e-015 0.99999826577113349</Rotation>
+<Translation>104.1399713678814 131.40000000000001 0.030747873681303113</Translation>
+</Transform>
+</Instance>
+<Instance name="SM_SROBOT_WRIST" uid="47" entityUid="SM_SROBOT_WRIST_prt">
+<Transform>
+<Rotation>0.99999073420257312 0.0038811150811566271 -0.0018623787814228345 -0.0038811218119101016 0.99999246841837819 3.3861768369749384e-015 0.0018623647547650448 7.2281189072325719e-006 0.99999826577113338</Rotation>
+<Translation>212.08966937677076 131.34085170358651 0.23179144936963406</Translation>
+</Transform>
+</Instance>
+<Instance name="SM_SROBOT_METACARPLES" uid="49" entityUid="SM_SROBOT_METACARPLES_prt">
+<Transform>
+<Rotation>0.99999073420257312 0.0038811285425738688 -0.0018623507281642347 -0.0038811218119101016 0.99999246839225553 7.2280770064021985e-006 0.0018623647547650448 0 0.99999826579725648</Rotation>
+<Translation>246.37935165257699 131.20776803665609 0.29565193681052748</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="Coincident_42_0">
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>40</Uid>
+</InstancePath>
+<Position>-12.699999999999999 55.995018331147293 0</Position>
+<Axis>0 76.004981668852707 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>42</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -25.399999999999999 -8.8683677372178297e-014</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Distance name="Distance_42_1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>40</Uid>
+</InstancePath>
+<Position>0 132 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>42</Uid>
+</InstancePath>
+<Position>0 -25.399999999999999 -8.8683677372178297e-014</Position>
+<Axis>0 -1 -3.4914833611093821e-015</Axis>
+</ConstraintGeometry>
+</Distance>
+<Coincident name="Coincident_46_0">
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>42</Uid>
+</InstancePath>
+<Position>100.32999999999998 -19.050000000000022 9.1068374629549309e-015</Position>
+<Axis>0 36.068000000000026 6.0201274304158559e-015</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>46</Uid>
+</InstancePath>
+<Position>-16.510000000000002 9.6520000000000152 -1.7347234759768071e-015</Position>
+<Axis>0 5.587999999999937 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident_46_1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>42</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>46</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident_47_0">
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>46</Uid>
+</InstancePath>
+<Position>92.710000000000264 0 -20.319999999999986</Position>
+<Axis>0 0 40.639999999999958</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>47</Uid>
+</InstancePath>
+<Position>-15.240000000000013 0 -18.415000000000003</Position>
+<Axis>0 0 36.829999999999984</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident_47_1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>46</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>47</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Rigid name="Rigid_49_0">
+<InstancePath>
+<Uid>47</Uid>
+</InstancePath>
+<InstancePath>
+<Uid>49</Uid>
+</InstancePath>
+</Rigid>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="SM_SROBOT_BASE" uid="SM_SROBOT_BASE_prt" version="5135">
+<PartFile name="SM_SROBOT_BASE.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>1230332.4418973264</Mass>
+<CenterOfMass>-28.067302006900047 24.987758089829889 0</CenterOfMass>
+<Inertia>2646179932.2619867 5112463862.3534107 3622303018.2599869 0 0 -61620775.025970697</Inertia>
+</MassProperties>
+<GeometryFile name="sm_srobot_base_prt.step" type="STEP"/>
+</Part>
+<Part name="SM_SROBOT_FOREARM" uid="SM_SROBOT_FOREARM_prt" version="2226">
+<PartFile name="SM_SROBOT_FOREARM.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>127800.45772488748</Mass>
+<CenterOfMass>40.422140544565259 0.17779706874758128 0</CenterOfMass>
+<Inertia>32690433.382860839 149273208.36530805 138663564.64174789 0 0 14695.069601112627</Inertia>
+</MassProperties>
+<GeometryFile name="sm_srobot_forearm_prt.step" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.3386274509803921" g="0.3386274509803921" b="0.44431372549019599" a="1"/>
+<Diffuse r="0.55411764705882338" g="0.55411764705882338" b="0.72705882352941165" a="1"/>
+<Specular r="0.59999999999999998" g="0.59999999999999998" b="0.59999999999999998" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.59999999999999998</Shininess>
+</VisualProperties>
+</Part>
+<Part name="SM_SROBOT_METACARPLES" uid="SM_SROBOT_METACARPLES_prt" version="2625">
+<PartFile name="SM_SROBOT_METACARPLES.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>37527.939514370781</Mass>
+<CenterOfMass>5.1853160313911246 0 0</CenterOfMass>
+<Inertia>10014076.706942538 10885107.94799147 8969818.773918381 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="sm_srobot_metacarples_prt.step" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.36235294117647054" g="0.54999999999999993" b="0.4550980392156862" a="1"/>
+<Diffuse r="0.59294117647058819" g="0.89999999999999991" b="0.74470588235294111" a="1"/>
+<Specular r="0.59999999999999998" g="0.59999999999999998" b="0.59999999999999998" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.59999999999999998</Shininess>
+</VisualProperties>
+</Part>
+<Part name="SM_SROBOT_UPPERARM" uid="SM_SROBOT_UPPERARM_prt" version="2847">
+<PartFile name="SM_SROBOT_UPPERARM.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>107644.40576537253</Mass>
+<CenterOfMass>25.090771211602508 1.8690818670430409 0</CenterOfMass>
+<Inertia>85408089.245658055 320030271.91057569 305820609.72430104 0 0 5955195.7268828033</Inertia>
+</MassProperties>
+<GeometryFile name="sm_srobot_upperarm_prt.step" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.54999999999999993" g="0.28039215686274505" b="0.28039215686274505" a="1"/>
+<Diffuse r="0.89999999999999991" g="0.45882352941176463" b="0.45882352941176463" a="1"/>
+<Specular r="0.59999999999999998" g="0.59999999999999998" b="0.59999999999999998" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.59999999999999998</Shininess>
+</VisualProperties>
+</Part>
+<Part name="SM_SROBOT_WRIST" uid="SM_SROBOT_WRIST_prt" version="2403">
+<PartFile name="SM_SROBOT_WRIST.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>19298.028997618152</Mass>
+<CenterOfMass>-4.5730103166964078 0 0</CenterOfMass>
+<Inertia>3448714.3316678163 5891040.5450648172 4935628.5195454434 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="sm_srobot_wrist_prt.step" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.54999999999999993" g="0.43352941176470583" b="0.31705882352941173" a="1"/>
+<Diffuse r="0.89999999999999991" g="0.7094117647058823" b="0.51882352941176457" a="1"/>
+<Specular r="0.59999999999999998" g="0.59999999999999998" b="0.59999999999999998" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.59999999999999998</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
